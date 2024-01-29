@@ -5,6 +5,8 @@ $(document).ready(function(){
     function viewSlide(){
         slidesData.removeClass('active');
         slidesData.eq(pointer).addClass('active')
+        // slidesData.fadeOut(3000);
+        // slidesData.eq(pointer).fadeIn(3000)
     }
 
     function next(){
