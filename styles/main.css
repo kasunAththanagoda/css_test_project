@@ -54,7 +54,7 @@
 }
 
 .top-right > ul > li:last-child {
-  margin-right: 0;
+  margin-right: 0; 
 }
 
 .top-right ul li:hover {
@@ -90,4 +90,76 @@
 
 .slide.active {
   opacity: 1;
+}
+
+/* solution */
+.solution-main-outer{
+    width: 100%;
+    height: auto;
+    border: 1px solid red;
+    background-image: url("https://preview.colorlib.com/theme/eroo/images/use_your_illusion.png.webp")
+}
+
+.inner-wrap{
+    border: 1px solid blue;
+    width: 100%;
+    height: 250px;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    height: 100%;
+    position: relative;
+    background-color: rgba(52,73,94,1.0);
+    color: orange;
+}
+.inner:hover{
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.inner-wrap-element{
+    flex: 1;
+    /* background-color: yellow; */
+    border: 10x solid yellow;
+    display: flex;
+    padding: 10px;
+
+}
+
+.inner > .inner-wrap-element:first-child{
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.movable-element{
+  width:35px;
+  height: 35px;
+  border: 2px solid red;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  right: 100px;
+  /* background-color: rgba(52, 73, 94, 0.5); */
+  background-color: white;
+  transition: all 1s;
+  z-index: 1;
+  /* display: none; */
+
+}
+
+.inner:hover .movable-element{
+  transform: translate(50px);
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .top-outer{
+    display: none;
+  }
 }
